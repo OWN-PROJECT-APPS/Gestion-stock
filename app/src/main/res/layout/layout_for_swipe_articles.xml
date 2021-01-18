@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="5dp"
+
+   >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/articlePicture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@android:color/transparent"
+        android:elevation="3sp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/article"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/background_article"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/articleName"
+        android:layout_width="202dp"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:text="@string/app_name"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/customColor"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/articlePicture"
+        app:layout_constraintStart_toStartOf="@+id/articlePicture"
+        app:layout_constraintTop_toBottomOf="@+id/articlePicture" />
+
+    <TextView
+        android:id="@+id/articleQte"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:text="@string/quantityValue"
+        android:textAlignment="viewStart"
+        android:textColor="@color/customColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/articleName" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:text="@string/qte"
+        android:textAlignment="viewStart"
+        android:textColor="@color/customColor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/articleQte"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/articleName" />
+
+    <TextView
+        android:id="@+id/articlePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:text="@string/quantityValue"
+        android:textAlignment="viewStart"
+        android:textColor="@color/customColor"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/articleQte"
+        app:layout_constraintTop_toBottomOf="@+id/articleQte" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:padding="5dp"
+        android:scrollbars="vertical"
+        android:text="@string/price"
+        android:textAlignment="viewStart"
+        android:textColor="@color/customColor"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/buyNow"
+        android:layout_width="155dp"
+        android:layout_height="70dp"
+        android:background="@drawable/background_button"
+        android:text="@string/buyNow"
+        android:textColor="#fff"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@+id/view"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

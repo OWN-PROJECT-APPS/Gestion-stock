@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">gestion stock</string>
+    <string name="buyNow">buy</string>
+    <string name="qte">Quantity</string>
+    <string name="number">Num</string>
+    <string name="price">Price</string>
+    <string name="date">Date</string>
+    <string name="article">Article</string>
+    <string name="quantityValue">10</string>
+    <string name="Buy">Buy</string>
+    <string name="info">info</string>
+    <string name="add_article">add Article</string>
+    <string name="articleName">Name</string>
+    <string name="qteName">Qte</string>
+</resources>
